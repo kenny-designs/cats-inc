@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Product Page</title>
+
+    <style>
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+        }
+
+        .bgimg {
+            background-image: url('./cats-bg.jpg');
+            height: 100%;
+            background-position: center;
+            background-size: cover;
+            position: relative;
+            color: black;
+            font-family: "Courier New", Courier, monospace;
+            font-size: 25px;
+        }
+
+        .topleft {
+            position: absolute;
+            top: 0;
+            left: 16px;
+        }
+
+        .bottomleft {
+            position: absolute;
+            bottom: 10%;
+            left: 16px;
+        }
+
+        .middle {
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        #cat-gallery {
+            display: inline-flex;
+        }
+
+        .cat-listing {
+            margin: 10px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <a href="./home.html">Home</a> |
+        <a href="./about.html">About Us</a> |
+        <a href="./products.html">Products</a> |
+        <a href="./help.html">Help</a> |
+        <a href="./contact.html">Contact</a> |
+        <a href="./order.html">Place Order</a>
+    </div>
+
+    <div class="bgimg">
+        <div class="topleft">
+            <p>Cats Inc.</p>
+            </div>
+            <div class="middle">
+                <h1>Buy Our Cats!</h1>
+                <div id="cat-gallery">
+                    <div class="cat-listing">
+                        <a href="./order.html">
+                            <img src="./sample-img.jpg" width=200px height=135px alt="Cat Fatty">
+                        </a>
+                        <p>Chunky boy.</p>
+                        <p><i>$9.95</i></p>
+                    </div>
+            
+                    <div class="cat-listing">
+                        <a href="./order.html">
+                            <img src="./sleepy-cat.jpg" width=200px alt="Cat Sleepy">
+                        </a>
+                        <p>Sleepy Boy!</p>
+                        <p><i>$19.99</i></p>
+                    </div>
+            
+                    <div class="cat-listing">
+                        <a href="./order.html">
+                            <img src="./pointy-ear-cat.jpg" width=200px alt="Cat Angery">
+                        </a>
+                        <p>Angery :(</p>
+                        <p><i>Arm and a leg</i></p>
+                    </div>
+                </div>
+            </div>
+            <div class="bottomleft">
+                <p>They are adorable and need a family :3</p>
+        </div>
+    </div>
+</body>
+
+</html>
